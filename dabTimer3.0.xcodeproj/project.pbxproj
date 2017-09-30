@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D07C27FE1F7EFF750064E5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C27FD1F7EFF750064E5ED /* AppDelegate.swift */; };
+		D07C28001F7EFF750064E5ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C27FF1F7EFF750064E5ED /* ViewController.swift */; };
+		D07C28031F7EFF750064E5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07C28011F7EFF750064E5ED /* Main.storyboard */; };
+		D07C28051F7EFF750064E5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07C28041F7EFF750064E5ED /* Assets.xcassets */; };
+		D07C28081F7EFF750064E5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07C28061F7EFF750064E5ED /* LaunchScreen.storyboard */; };
+		D083C0FA1F7F81B300A8DC40 /* text_notification.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D083C0F91F7F81B300A8DC40 /* text_notification.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D07C27FA1F7EFF750064E5ED /* dabTimer3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dabTimer3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07C27FD1F7EFF750064E5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D07C27FF1F7EFF750064E5ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D07C28021F7EFF750064E5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D07C28041F7EFF750064E5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D07C28071F7EFF750064E5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D07C28091F7EFF750064E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D083C0F91F7F81B300A8DC40 /* text_notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_notification.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D07C27F71F7EFF750064E5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D07C27F11F7EFF750064E5ED = {
+			isa = PBXGroup;
+			children = (
+				D07C27FC1F7EFF750064E5ED /* dabTimer3.0 */,
+				D07C27FB1F7EFF750064E5ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D07C27FB1F7EFF750064E5ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D07C27FA1F7EFF750064E5ED /* dabTimer3.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D07C27FC1F7EFF750064E5ED /* dabTimer3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D07C27FD1F7EFF750064E5ED /* AppDelegate.swift */,
+				D07C27FF1F7EFF750064E5ED /* ViewController.swift */,
+				D07C28011F7EFF750064E5ED /* Main.storyboard */,
+				D07C28041F7EFF750064E5ED /* Assets.xcassets */,
+				D07C28061F7EFF750064E5ED /* LaunchScreen.storyboard */,
+				D083C0F91F7F81B300A8DC40 /* text_notification.mp3 */,
+				D07C28091F7EFF750064E5ED /* Info.plist */,
+			);
+			path = dabTimer3.0;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D07C27F91F7EFF750064E5ED /* dabTimer3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D07C280C1F7EFF750064E5ED /* Build configuration list for PBXNativeTarget "dabTimer3.0" */;
+			buildPhases = (
+				D07C27F61F7EFF750064E5ED /* Sources */,
+				D07C27F71F7EFF750064E5ED /* Frameworks */,
+				D07C27F81F7EFF750064E5ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dabTimer3.0;
+			productName = dabTimer3.0;
+			productReference = D07C27FA1F7EFF750064E5ED /* dabTimer3.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D07C27F21F7EFF750064E5ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "RD concepts";
+				TargetAttributes = {
+					D07C27F91F7EFF750064E5ED = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D07C27F51F7EFF750064E5ED /* Build configuration list for PBXProject "dabTimer3.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D07C27F11F7EFF750064E5ED;
+			productRefGroup = D07C27FB1F7EFF750064E5ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D07C27F91F7EFF750064E5ED /* dabTimer3.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D07C27F81F7EFF750064E5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07C28081F7EFF750064E5ED /* LaunchScreen.storyboard in Resources */,
+				D07C28051F7EFF750064E5ED /* Assets.xcassets in Resources */,
+				D083C0FA1F7F81B300A8DC40 /* text_notification.mp3 in Resources */,
+				D07C28031F7EFF750064E5ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D07C27F61F7EFF750064E5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07C28001F7EFF750064E5ED /* ViewController.swift in Sources */,
+				D07C27FE1F7EFF750064E5ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D07C28011F7EFF750064E5ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D07C28021F7EFF750064E5ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D07C28061F7EFF750064E5ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D07C28071F7EFF750064E5ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D07C280A1F7EFF750064E5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D07C280B1F7EFF750064E5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D07C280D1F7EFF750064E5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = dabTimer3.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reedjustin77-gmail.dabTimer3-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D07C280E1F7EFF750064E5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = dabTimer3.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reedjustin77-gmail.dabTimer3-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D07C27F51F7EFF750064E5ED /* Build configuration list for PBXProject "dabTimer3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07C280A1F7EFF750064E5ED /* Debug */,
+				D07C280B1F7EFF750064E5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D07C280C1F7EFF750064E5ED /* Build configuration list for PBXNativeTarget "dabTimer3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07C280D1F7EFF750064E5ED /* Debug */,
+				D07C280E1F7EFF750064E5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D07C27F21F7EFF750064E5ED /* Project object */;
+}
