@@ -42,6 +42,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any) {
+        heatUpSeconds = Int(heatUpLabel.text!)!
+        coolDownSeconds = Int(coolDownLabel.text!)!
         heatUpTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.heatUpCounter), userInfo: nil, repeats: true)
         
         coolDownStepperOutlet.isHidden = true
@@ -137,11 +139,19 @@ class ViewController: UIViewController {
             heatUpLabel.text = x
             //set the stepper value to the label value
             heatUpStepperOutlet.value = Double(x)!
+        } else{
+            heatUpStepperOutlet.value = 20.0
         }
+        
+        
         if let y = UserDefaults.standard.object(forKey: "coolDownSeconds") as? String {
             coolDownLabel.text = y
+            
             //set the stepper value to the label value
             coolDownStepperOutlet.value = Double(y)!
+            
+        } else {
+           coolDownStepperOutlet.value = 50.0
         }
     }
     
