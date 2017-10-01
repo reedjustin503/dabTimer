@@ -57,11 +57,12 @@ class ViewController: UIViewController {
         
         if coolDownSeconds == 0 {
             coolDownTimer.invalidate()
-            for _ in 1...3 {
-                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
-                sleep(1)
-            }
             audioPlayer.play()
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            //for _ in 1...3 {
+            //    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+            //    sleep(1)
+            //}
             //TODO FEEDBACK ask Dabman for feedback if users should have to hit the reset button to make the rest of the buttons apear
             //coolDownStepperOutlet.isHidden = false
             //heatUpStepperOutlet.isHidden = false
@@ -75,8 +76,8 @@ class ViewController: UIViewController {
         
         if (heatUpSeconds == 0) {
             heatUpTimer.invalidate()
-            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             audioPlayer.play()
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             coolDownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.coolDownCounter), userInfo: nil, repeats: true)
         }
     }
