@@ -9,8 +9,21 @@
 import UIKit
 import AVFoundation
 import AudioToolbox
+import GoogleMobileAds
 
 class ViewController: UIViewController {
+    
+    //Google Adwords
+    
+    @IBOutlet weak var GoogleBannerView: GADBannerView!
+    
+    
+    
+    
+    
+    
+    
+    
     
     var audioPlayer = AVAudioPlayer()
     //Adjust heatUpSeconds and coolDownSeconds to user defaults
@@ -124,7 +137,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // google Adwords
+        GoogleBannerView.adUnitID = "ca-app-pub-3940256099942544/6300978111"
+        GoogleBannerView.rootViewController = self
+        GoogleBannerView.load(GADRequest())
+        
+        
         
         do {
             let audioPath = Bundle.main.path(forResource: "text_notification", ofType: ".mp3")

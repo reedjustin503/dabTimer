@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D03D6AB51F81894400075796 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AB41F81894400075796 /* GoogleMobileAds.framework */; };
+		D03D6AB71F81896000075796 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AB61F81896000075796 /* AdSupport.framework */; };
+		D03D6AB91F81896A00075796 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AB81F81896A00075796 /* AudioToolbox.framework */; };
+		D03D6ABB1F81897100075796 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6ABA1F81897100075796 /* AVFoundation.framework */; };
+		D03D6ABD1F81897900075796 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6ABC1F81897900075796 /* CoreGraphics.framework */; };
+		D03D6ABF1F81898000075796 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6ABE1F81898000075796 /* CoreTelephony.framework */; };
+		D03D6AC11F81898A00075796 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AC01F81898A00075796 /* EventKit.framework */; };
+		D03D6AC31F81898F00075796 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AC21F81898F00075796 /* EventKitUI.framework */; };
+		D03D6AC51F81899700075796 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AC41F81899700075796 /* MessageUI.framework */; };
+		D03D6AC71F81899F00075796 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AC61F81899F00075796 /* StoreKit.framework */; };
+		D03D6AC91F8189A700075796 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03D6AC81F8189A700075796 /* SystemConfiguration.framework */; };
 		D07C27FE1F7EFF750064E5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C27FD1F7EFF750064E5ED /* AppDelegate.swift */; };
 		D07C28001F7EFF750064E5ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C27FF1F7EFF750064E5ED /* ViewController.swift */; };
 		D07C28031F7EFF750064E5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07C28011F7EFF750064E5ED /* Main.storyboard */; };
@@ -16,6 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D03D6AB41F81894400075796 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "SDKs/GoogleMobileAdsSdkiOS-7.24.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		D03D6AB61F81896000075796 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D03D6AB81F81896A00075796 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D03D6ABA1F81897100075796 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D03D6ABC1F81897900075796 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D03D6ABE1F81898000075796 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D03D6AC01F81898A00075796 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		D03D6AC21F81898F00075796 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		D03D6AC41F81899700075796 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D03D6AC61F81899F00075796 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D03D6AC81F8189A700075796 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D07C27FA1F7EFF750064E5ED /* dabTimer3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dabTimer3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07C27FD1F7EFF750064E5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D07C27FF1F7EFF750064E5ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +53,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03D6AC91F8189A700075796 /* SystemConfiguration.framework in Frameworks */,
+				D03D6AC71F81899F00075796 /* StoreKit.framework in Frameworks */,
+				D03D6AC51F81899700075796 /* MessageUI.framework in Frameworks */,
+				D03D6AC31F81898F00075796 /* EventKitUI.framework in Frameworks */,
+				D03D6AC11F81898A00075796 /* EventKit.framework in Frameworks */,
+				D03D6ABF1F81898000075796 /* CoreTelephony.framework in Frameworks */,
+				D03D6ABD1F81897900075796 /* CoreGraphics.framework in Frameworks */,
+				D03D6ABB1F81897100075796 /* AVFoundation.framework in Frameworks */,
+				D03D6AB91F81896A00075796 /* AudioToolbox.framework in Frameworks */,
+				D03D6AB71F81896000075796 /* AdSupport.framework in Frameworks */,
+				D03D6AB51F81894400075796 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D03D6AB31F81894300075796 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D03D6AC81F8189A700075796 /* SystemConfiguration.framework */,
+				D03D6AC61F81899F00075796 /* StoreKit.framework */,
+				D03D6AC41F81899700075796 /* MessageUI.framework */,
+				D03D6AC21F81898F00075796 /* EventKitUI.framework */,
+				D03D6AC01F81898A00075796 /* EventKit.framework */,
+				D03D6ABE1F81898000075796 /* CoreTelephony.framework */,
+				D03D6ABC1F81897900075796 /* CoreGraphics.framework */,
+				D03D6ABA1F81897100075796 /* AVFoundation.framework */,
+				D03D6AB81F81896A00075796 /* AudioToolbox.framework */,
+				D03D6AB61F81896000075796 /* AdSupport.framework */,
+				D03D6AB41F81894400075796 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D07C27F11F7EFF750064E5ED = {
 			isa = PBXGroup;
 			children = (
 				D07C27FC1F7EFF750064E5ED /* dabTimer3.0 */,
 				D07C27FB1F7EFF750064E5ED /* Products */,
+				D03D6AB31F81894300075796 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +316,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDKs/GoogleMobileAdsSdkiOS-7.24.1",
+				);
 				INFOPLIST_FILE = dabTimer3.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reedjustin77-gmail.dabTimer3-0";
@@ -276,6 +332,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDKs/GoogleMobileAdsSdkiOS-7.24.1",
+				);
 				INFOPLIST_FILE = dabTimer3.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reedjustin77-gmail.dabTimer3-0";
