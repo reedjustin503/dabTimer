@@ -151,6 +151,7 @@
 				TargetAttributes = {
 					D07C27F91F7EFF750064E5ED = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FWW8KHDFNW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -316,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FWW8KHDFNW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDKs/GoogleMobileAdsSdkiOS-7.24.1",
@@ -325,6 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reedjustin77-gmail.dabTimer3-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -332,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FWW8KHDFNW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SDKs/GoogleMobileAdsSdkiOS-7.24.1",
@@ -341,6 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reedjustin77-gmail.dabTimer3-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
