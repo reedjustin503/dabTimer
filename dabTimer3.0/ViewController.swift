@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-import AudioToolbox
+import AudioToolbox  // vibrate the iphone
 import GoogleMobileAds
 
 class ViewController: UIViewController {
@@ -72,6 +72,7 @@ class ViewController: UIViewController {
             coolDownTimer.invalidate()
             audioPlayer.play()
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            
             //for _ in 1...3 {
             //    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
             //    sleep(1)
