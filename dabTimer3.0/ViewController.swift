@@ -73,6 +73,38 @@ class ViewController: UIViewController {
             audioPlayer.play()
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             
+            //screen flash
+            if let wnd = self.view{
+                
+                var v = UIView(frame: wnd.bounds)
+                v.backgroundColor = UIColor.white
+                v.alpha = 1
+                
+                wnd.addSubview(v)
+                UIView.animate(withDuration: 1, animations: {
+                    v.alpha = 0.0
+                }, completion: {(finished:Bool) in
+                    print("inside")
+                    v.removeFromSuperview()
+                })
+            }
+            if let wnd = self.view{
+                
+                var v = UIView(frame: wnd.bounds)
+                v.backgroundColor = UIColor.white
+                v.alpha = 1
+                
+                wnd.addSubview(v)
+                UIView.animate(withDuration: 1, animations: {
+                    v.alpha = 0.0
+                }, completion: {(finished:Bool) in
+                    print("inside")
+                    v.removeFromSuperview()
+                })
+            }
+            
+            //screen flash end
+            
             //for _ in 1...3 {
             //    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
             //    sleep(1)
@@ -90,6 +122,23 @@ class ViewController: UIViewController {
         
         if (heatUpSeconds == 0) {
             heatUpTimer.invalidate()
+            // testing screen flashing ideas here cameraView.frame
+            if let wnd = self.view{
+                
+                var v = UIView(frame: wnd.bounds)
+                v.backgroundColor = UIColor.white
+                v.alpha = 1
+                
+                wnd.addSubview(v)
+                UIView.animate(withDuration: 1, animations: {
+                    v.alpha = 0.0
+                }, completion: {(finished:Bool) in
+                    print("inside")
+                    v.removeFromSuperview()
+                })
+            }
+            
+            //testing screen flashing ideas above
             audioPlayer.play()
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             coolDownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.coolDownCounter), userInfo: nil, repeats: true)
