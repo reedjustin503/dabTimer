@@ -11,7 +11,29 @@ import AVFoundation
 import AudioToolbox  // vibrate the iphone
 import GoogleMobileAds
 
+
+
 class ViewController: UIViewController {
+    
+    
+    
+    // screen flash
+    func flash() {
+        if let wnd = self.view{
+            
+            var v = UIView(frame: wnd.bounds)
+            v.backgroundColor = UIColor.white
+            v.alpha = 1
+            
+            wnd.addSubview(v)
+            UIView.animate(withDuration: 1.0, animations: {
+                v.alpha = 0.0
+            }, completion: {(finished:Bool) in
+                print("inside")
+                v.removeFromSuperview()
+            })
+        }
+    }
     
     //Google Adwords
     
@@ -19,14 +41,8 @@ class ViewController: UIViewController {
     
     
     
-    
-    
-    
-    
-    
-    
     var audioPlayer = AVAudioPlayer()
-    //Adjust heatUpSeconds and coolDownSeconds to user defaults
+    //TODO Adjust heatUpSeconds and coolDownSeconds to user defaults
     var heatUpSeconds = 20
     var coolDownSeconds = 50
     var heatUpTimer = Timer()
@@ -55,6 +71,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any) {
+        
+        
+        
         heatUpSeconds = Int(heatUpLabel.text!)!
         coolDownSeconds = Int(coolDownLabel.text!)!
         heatUpTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.heatUpCounter), userInfo: nil, repeats: true)
@@ -64,13 +83,14 @@ class ViewController: UIViewController {
         startOutlet.isHidden = true
     }
     
+    
     func coolDownCounter() {
         coolDownSeconds -= 1
         coolDownLabel.text = String(coolDownSeconds)
         
         if coolDownSeconds == 0 {
             coolDownTimer.invalidate()
-            audioPlayer.play()
+            //audioPlayer.play()
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             
             //screen flash
@@ -81,38 +101,16 @@ class ViewController: UIViewController {
                 v.alpha = 1
                 
                 wnd.addSubview(v)
-                UIView.animate(withDuration: 1, animations: {
+                UIView.animate(withDuration: 1.618034, animations: {
                     v.alpha = 0.0
                 }, completion: {(finished:Bool) in
                     print("inside")
                     v.removeFromSuperview()
                 })
             }
-            if let wnd = self.view{
-                
-                var v = UIView(frame: wnd.bounds)
-                v.backgroundColor = UIColor.white
-                v.alpha = 1
-                
-                wnd.addSubview(v)
-                UIView.animate(withDuration: 1, animations: {
-                    v.alpha = 0.0
-                }, completion: {(finished:Bool) in
-                    print("inside")
-                    v.removeFromSuperview()
-                })
-            }
-            
-            //screen flash end
-            
-            //for _ in 1...3 {
-            //    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
-            //    sleep(1)
-            //}
-            //TODO FEEDBACK ask Dabman for feedback if users should have to hit the reset button to make the rest of the buttons apear
-            //coolDownStepperOutlet.isHidden = false
-            //heatUpStepperOutlet.isHidden = false
-            //startOutlet.isHidden = false
+        
+            //end flash
+           
         }
     }
     
@@ -123,27 +121,14 @@ class ViewController: UIViewController {
         if (heatUpSeconds == 0) {
             heatUpTimer.invalidate()
             // testing screen flashing ideas here cameraView.frame
-            if let wnd = self.view{
-                
-                var v = UIView(frame: wnd.bounds)
-                v.backgroundColor = UIColor.white
-                v.alpha = 1
-                
-                wnd.addSubview(v)
-                UIView.animate(withDuration: 1, animations: {
-                    v.alpha = 0.0
-                }, completion: {(finished:Bool) in
-                    print("inside")
-                    v.removeFromSuperview()
-                })
-            }
-            
+            flash()
             //testing screen flashing ideas above
-            audioPlayer.play()
+            //audioPlayer.play()
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             coolDownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.coolDownCounter), userInfo: nil, repeats: true)
         }
     }
+ 
     
     
     @IBOutlet weak var stopOutlet: UIButton!
@@ -204,6 +189,11 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        
+        //disables sleep timer
+        UIApplication.shared.isIdleTimerDisabled = true
+        
+        
         if let x = UserDefaults.standard.object(forKey: "heatUpSeconds") as? String {
             heatUpLabel.text = x
             //set the stepper value to the label value
